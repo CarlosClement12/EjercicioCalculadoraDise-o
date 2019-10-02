@@ -22,7 +22,7 @@ namespace EjercicioCalculadoraDiseño
     {
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
     }
 }
