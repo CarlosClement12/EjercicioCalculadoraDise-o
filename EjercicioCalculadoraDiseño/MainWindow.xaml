@@ -7,6 +7,73 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Border BorderThickness="1" BorderBrush="Black" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3">
+            <Viewbox HorizontalAlignment="Right">
+                <TextBlock x:Name="resultTextBlock" Text="" Grid.Column="2"></TextBlock>
+            </Viewbox>
+        </Border>
+        <Button x:Name="OneButton" Grid.Row="1" Grid.Column="0" Tag="1" FontSize="22" Margin="5" Click="ButtonClick">
+            <Viewbox>
+                <TextBlock>1</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button x:Name="TwoButton" Grid.Row="1" Grid.Column="1" Tag="2" FontSize="22" Margin="5" Click="ButtonClick">
+            <Viewbox>
+                <TextBlock>2</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button x:Name="ThreeButton" Grid.Row="1" Grid.Column="2" Tag="3" FontSize="22" Margin="5" Click="ButtonClick">
+            <Viewbox>
+                <TextBlock>3</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button x:Name="FourButton" Grid.Row="2" Grid.Column="0" Tag="4" FontSize="22" Margin="5" Click="ButtonClick">
+            <Viewbox>
+                <TextBlock>4</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button x:Name="FiveButton" Grid.Row="2" Grid.Column="1" Tag="5" FontSize="22" Margin="5" Click="ButtonClick">
+            <Viewbox>
+                <TextBlock>5</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button x:Name="SixButton" Grid.Row="2" Grid.Column="2" Tag="6" FontSize="22" Margin="5" Click="ButtonClick">
+            <Viewbox>
+                <TextBlock>6</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button x:Name="SevenButton" Grid.Row="3" Grid.Column="0" Tag="7" FontSize="22" Margin="5" Click="ButtonClick">
+            <Viewbox>
+                <TextBlock>7</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button x:Name="EightButton" Grid.Row="3" Grid.Column="1" Tag="8" FontSize="22" Margin="5" Click="ButtonClick">
+            <Viewbox>
+                <TextBlock>8</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button x:Name="NineButton" Grid.Row="3" Grid.Column="2" Tag="9" FontSize="22" Margin="5" Click="ButtonClick">
+            <Viewbox>
+                <TextBlock>9</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button x:Name="ZeroButton" Grid.Row="4" Grid.Column="0" Tag="0" FontSize="22" Margin="5" Grid.ColumnSpan="3" Click="ButtonClick">
+            <Viewbox>
+                <TextBlock>0</TextBlock>
+            </Viewbox>
+        </Button>
     </Grid>
 </Window>

@@ -24,5 +24,10 @@ namespace EjercicioCalculadoraDiseño
         {
             InitializeComponent();
         }
+
+        private void ButtonClick(object sender, RoutedEventArgs e)
+        {
+            resultTextBlock.Text += ((Button)sender).Tag;
+        }
     }
 }
